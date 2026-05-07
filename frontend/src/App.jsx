@@ -147,7 +147,7 @@ function App() {
         {productosFiltrados.map((producto) => (
           <div className="tarjeta" key={producto.id_producto}>
             <img
-              src={`/src/imagenes/${producto.imagen}`}
+              src={`/imagenes/${producto.imagen}`}
               alt={producto.nombre}
               onClick={() => setProductoSeleccionado(producto)}
             />
@@ -208,7 +208,7 @@ function App() {
                 {carrito.map((item) => (
                   <div className="item-carrito" key={item.id_producto}>
                     <img
-                      src={`/src/imagenes/${item.imagen}`}
+                     src={`/imagenes/${item.imagen}`}
                       alt={item.nombre}
                     />
 
@@ -263,7 +263,7 @@ function App() {
           <p>Escanea el QR y realiza el pago por el monto exacto.</p>
 
           <img
-            src="/src/imagenes/qr-yape.jpg"
+           src="/imagenes/qr-yape.jpg"
             alt="QR Yape"
             className="qr-yape"
           />
@@ -290,7 +290,7 @@ function App() {
 
             <div className="detalle-imagen">
               <img
-                src={`/src/imagenes/${productoSeleccionado.imagen}`}
+              src={`/imagenes/${productoSeleccionado.imagen}`}
                 alt={productoSeleccionado.nombre}
               />
             </div>
