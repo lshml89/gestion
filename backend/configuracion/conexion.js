@@ -15,6 +15,6 @@ const conexion = mysql.createPool({
   queueLimit: 0,
 });
 
-console.log("Pool de MySQL configurado correctamente");
+console.log("Pool MySQL listo");
 
 module.exports = conexion;
