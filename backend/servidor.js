@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
   res.send("Backend de tienda virtual con Yape funcionando");
 });
 
-const PUERTO = process.env.PUERTO || 3001;
+const PUERTO = process.env.PORT || process.env.PUERTO || 3001;
 
 app.listen(PUERTO, () => {
   console.log(`Servidor corriendo en http://localhost:${PUERTO}`);
